@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4B08A11B836834004A619A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4B08A01B836834004A619A /* CoreBluetooth.framework */; };
+		2C4B08A21B83683F004A619A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4B08A01B836834004A619A /* CoreBluetooth.framework */; };
 		2C6FB0C41B7D9D7F0029748F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FB0C31B7D9D7F0029748F /* main.m */; };
 		2C6FB0C71B7D9D7F0029748F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FB0C61B7D9D7F0029748F /* AppDelegate.m */; };
 		2C6FB0CA1B7D9D7F0029748F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FB0C91B7D9D7F0029748F /* ViewController.m */; };
 		2C6FB0CD1B7D9D7F0029748F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6FB0CB1B7D9D7F0029748F /* Main.storyboard */; };
 		2C6FB0CF1B7D9D7F0029748F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6FB0CE1B7D9D7F0029748F /* Images.xcassets */; };
 		2C6FB0D21B7D9D7F0029748F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6FB0D01B7D9D7F0029748F /* LaunchScreen.xib */; };
-		2C6FB0EF1B7DE3E30029748F /* MisfitLinkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6FB0EE1B7DE3E30029748F /* MisfitLinkSDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		2C6FB0F11B7DE8CD0029748F /* MisfitLinkSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C6FB0EE1B7DE3E30029748F /* MisfitLinkSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C6FB0FD1B7E24C60029748F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FB0FC1B7E24C60029748F /* main.m */; };
 		2C6FB1001B7E24C60029748F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FB0FF1B7E24C60029748F /* AppDelegate.m */; };
 		2C6FB1061B7E24C60029748F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6FB1041B7E24C60029748F /* Main.storyboard */; };
@@ -27,28 +27,17 @@
 		2C6FB1331B7E25210029748F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6FB1271B7E25210029748F /* LaunchScreen.xib */; };
 		2C6FB1341B7E25210029748F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6FB1291B7E25210029748F /* Main.storyboard */; };
 		2C6FB1351B7E25210029748F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FB12C1B7E25210029748F /* SettingsViewController.m */; };
-		2C6FB1371B7E25570029748F /* MisfitLinkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6FB0EE1B7DE3E30029748F /* MisfitLinkSDK.framework */; };
-		2C6FB1391B7E25770029748F /* MisfitLinkSDK.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 2C6FB0EE1B7DE3E30029748F /* MisfitLinkSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C774B571B843EE7005D660F /* MisfitLinkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C774B531B842638005D660F /* MisfitLinkSDK.framework */; };
+		2C774B581B844F28005D660F /* MisfitLinkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C774B531B842638005D660F /* MisfitLinkSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2C6FB0F01B7DE8BC0029748F /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2C6FB0F11B7DE8CD0029748F /* MisfitLinkSDK.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2C6FB1381B7E25640029748F /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2C6FB1391B7E25770029748F /* MisfitLinkSDK.framework in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C4B08A01B836834004A619A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		2C6FB0BE1B7D9D7F0029748F /* com.misfit.linksdk.demo.msg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.misfit.linksdk.demo.msg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6FB0C21B7D9D7F0029748F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C6FB0C31B7D9D7F0029748F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,7 +57,6 @@
 		2C6FB0CE1B7D9D7F0029748F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C6FB0D11B7D9D7F0029748F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2C6FB0ED1B7DDBB90029748F /* const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = const.h; sourceTree = "<group>"; };
-		2C6FB0EE1B7DE3E30029748F /* MisfitLinkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MisfitLinkSDK.framework; path = ../../MisfitLinkSDK/MisfitLinkSDK.framework; sourceTree = "<group>"; };
 		2C6FB0F81B7E24C60029748F /* com.misfit.linksdk.demo.music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.misfit.linksdk.demo.music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6FB0FB1B7E24C60029748F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C6FB0FC1B7E24C60029748F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +77,7 @@
 		2C6FB12B1B7E25210029748F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2C6FB12C1B7E25210029748F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		2C6FB12E1B7E25210029748F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2C774B531B842638005D660F /* MisfitLinkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MisfitLinkSDK.framework; path = ../../MisfitLinkSDK/MisfitLinkSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6FB0EF1B7DE3E30029748F /* MisfitLinkSDK.framework in Frameworks */,
+				2C774B571B843EE7005D660F /* MisfitLinkSDK.framework in Frameworks */,
+				2C4B08A11B836834004A619A /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6FB1371B7E25570029748F /* MisfitLinkSDK.framework in Frameworks */,
+				2C774B581B844F28005D660F /* MisfitLinkSDK.framework in Frameworks */,
+				2C4B08A21B83683F004A619A /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +105,8 @@
 		2C6FB0B51B7D9D7F0029748F = {
 			isa = PBXGroup;
 			children = (
-				2C6FB0F91B7E24C60029748F /* com.misfit.linksdk.demo.music */,
 				2C6FB0EC1B7DD6420029748F /* Frameworks */,
+				2C6FB0F91B7E24C60029748F /* com.misfit.linksdk.demo.music */,
 				2C6FB0C01B7D9D7F0029748F /* com.misfit.linksdk.demo.msg */,
 				2C6FB0BF1B7D9D7F0029748F /* Products */,
 			);
@@ -158,7 +150,8 @@
 		2C6FB0EC1B7DD6420029748F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C6FB0EE1B7DE3E30029748F /* MisfitLinkSDK.framework */,
+				2C774B531B842638005D660F /* MisfitLinkSDK.framework */,
+				2C4B08A01B836834004A619A /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,7 +216,6 @@
 				2C6FB0BA1B7D9D7F0029748F /* Sources */,
 				2C6FB0BB1B7D9D7F0029748F /* Frameworks */,
 				2C6FB0BC1B7D9D7F0029748F /* Resources */,
-				2C6FB0F01B7DE8BC0029748F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -263,6 +255,7 @@
 				TargetAttributes = {
 					2C6FB0BD1B7D9D7F0029748F = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = WC64T22ANZ;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -483,6 +476,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/aseign/dev/misfit/thirdparty/MisfitLinkSDK,
@@ -490,7 +485,9 @@
 				INFOPLIST_FILE = com.misfit.linksdk.demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -498,6 +495,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/aseign/dev/misfit/thirdparty/MisfitLinkSDK,
@@ -505,7 +504,9 @@
 				INFOPLIST_FILE = com.misfit.linksdk.demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -524,6 +525,7 @@
 				INFOPLIST_FILE = com.misfit.linksdk.demo.music/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -539,6 +541,7 @@
 				INFOPLIST_FILE = com.misfit.linksdk.demo.music/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
