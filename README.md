@@ -13,5 +13,7 @@ the demo app for flash link SDK
 
 **关于编译**
 
+此Demo项目已设置好下面的选项.如果是在此外的项目中引用:
+
 * 如果你使用的是动态库, 请在Xcode6的项目Build Phases的Link Binary With Libraries处添加MisfitLinkSDK.framework,以及Embedded Framework处添加MisfitLinkSDK.framework
 * 如果你使用的是静态库, 请在在Xcode6的项目Build Phases的Link Binary With Libraries处添加CoreBluetooth.framework和MisfitLinkSDK.framework, 并在Build Settings的Other Linker Flags处添加-ObjC
