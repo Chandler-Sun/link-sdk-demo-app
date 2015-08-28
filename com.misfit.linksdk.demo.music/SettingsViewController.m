@@ -18,20 +18,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //Check the button status
-    self.swMisfitLinkButtonStatus.on = [MFLSession sharedInstance].enabled;
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationDidBecomeActive:)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)applicationDidBecomeActive:(NSNotification *)notification
+{
+    //Check the button status
+    self.swMisfitLinkButtonStatus.on = [MFLSession sharedInstance].enabled;
+}
+
 - (IBAction)onMisfitLinkStatusChanged:(UISwitch *)sender {
     BOOL isGoingToEnableMisfitLink = sender.on;
     if(isGoingToEnableMisfitLink){
-        [[MFLSession sharedInstance] enableWithAppId:@"misfittest"
-                                           appSecret:@"OHhJPAcTeLKmb8nZHd59u9sdyi8no3EU"
-                                          completion:^(NSDictionary *commandMappingDict, NSArray *supportedCommands, MFLError *error) {
+        [[MFLSession sharedInstance] enableWithAppId:@"100"
+                                           appSecret:@"C53ROcGYlXunwTUUpLitLQRnlR8PSgIF"
+                                          completion:^(NSDictionary *commandMappingDict, NSDictionary *supportedCommands, MFLError *error) {
                                               if (error)
                                               {
                                                   //reset the status

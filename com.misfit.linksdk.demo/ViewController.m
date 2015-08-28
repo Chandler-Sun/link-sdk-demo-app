@@ -22,14 +22,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.stateOfLinkButton.on = [MFLSession sharedInstance].enabled;
+    
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logButtonEvent:) name:kButtonEventNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationDidBecomeActive:)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)applicationDidBecomeActive:(NSNotification *)notification
+{
+    self.stateOfLinkButton.on = [MFLSession sharedInstance].enabled;
 }
 
 - (void)logButtonEvent:(NSNotification*)notification {
@@ -63,9 +73,9 @@
     BOOL isGoingToEnableMisfitLink = sender.on;
     if(isGoingToEnableMisfitLink){
         //启用Button，需要安装Misfit Link
-        [[MFLSession sharedInstance] enableWithAppId:@"sdkdemo1"
-                                           appSecret:@"test"
-                                          completion:^(NSDictionary *commandMappingDict, NSArray *supportedCommands, MFLError *error) {
+        [[MFLSession sharedInstance] enableWithAppId:@"101"
+                                           appSecret:@"kb51t9NRPFnL2YBBTuGNib1OBKTgAYEc"
+                                          completion:^(NSDictionary *commandMappingDict, NSDictionary *supportedCommands, MFLError *error) {
                                               if (error)
                                               {
                                                   //reset the status
